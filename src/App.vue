@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Esign</router-link> |
-      <router-link to="/fabric">Fabric</router-link> |
-      <router-link to="/Pdfview">Pdfview</router-link>
-    </nav>
     <router-view/>
   </div>
 </template>
