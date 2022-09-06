@@ -1,24 +1,33 @@
-# vue2-esign
+# vue2-Esign
 
-## Project setup
+## Pdfjs-dist (注意版本)
+### 安裝
 ```
-npm install
+npm install pdfjs-dist@2.5.207
 ```
-
-### Compiles and hot-reloads for development
+### 設定
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+const PDFJS = require("pdfjs-dist");
+PDFJS.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.worker.js";
 ```
 
-### Lints and fixes files
+## fabric
+### 安裝
 ```
-npm run lint
+npm install fabric
+```
+### 設定
+```
+import { fabric } from 'fabric'
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## jsPDF
+### 安裝
+```
+npm install jspdf
+```
+### 設定
+```
+import { jsPDF } from "jspdf";
+```
+
